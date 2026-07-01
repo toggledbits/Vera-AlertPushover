@@ -14,11 +14,11 @@ Bug reports and enhancement requests are welcome! Please use the "Issues" link f
 
 If you're reporting an issue, you will be asked to provide log messages, so capture your Vera log (http://hub-local-ip/cgi-bin/cmh/log.sh?Device=LuaUPnP) and be prepared to extract AlertPushover messages from it if asked (or better yet, extract and post them first thing).
 
-Please do not use the Ezlo Community Forums for communication about this plugin (or any others of mine). I don't read the forums there any more but perhaps once per month or two, and I won't respond in any case.
+**Please do not use the Ezlo Community Forums for communication about this plugin (or any others of mine). I don't read the forums there any more but perhaps once per month or two, and I won't respond in any case.**
 
 ## Installation ##
 
-**IMPORTANT:** This plugin is not distributed/updated in the Vera App Marketplace, which as of this writing has been down for months and is apparently not well supported within Ezlo these days. Updates will be offered exclusively through the plugin's [Github repository](https://github.com/toggledbits/AlertPushover).
+**IMPORTANT:** This plugin is not distributed/updated in the Vera App Marketplace, which as of this writing has been down for months and is apparently not well supported within Ezlo these days. Updates will be offered exclusively through the plugin's [Github repository](https://github.com/toggledbits/Vera-AlertPushover).
 
 1. Download the latest release package in ZIP format: [release packages](https://github.com/toggledbits/Vera-AlertPushover/releases)
 2. Unzip the downloaded archive to a folder on your local system (remember where!).
@@ -49,6 +49,8 @@ You will need to register for an account with Pushover at [https://pushover.net]
 If you run multiple Vera hubs, you may want to modify the `PushoverTitle` variable to help you discern which hub is sending the alerts you receive.
 
 `PushoverPriority` and `SeverityMap` help determine the Pushover priority of messages. `PushoverPriority` sets the default priority for all alerts that don't match a mapping in `SeverityMap`. The map is a string of the form `s=p,s=p,...`, where `s` is the Vera alert severity and `p` is the Pushover message priority to use for that alert. If "X" is given for the Pushover priority (i.e. on the right side of the equal sign), the alert will not be sent to Pushover (it is still removed from Vera's alert queue). [Pushover priorities](https://pushover.net/api#priority) are -2 (lowest) to 2 (emergency); 0 is normal/default. Vera priorities are not documented, so you're going to have to discover these for yourself and map them as you find them. The Vera priority is included in the text of the Pushover message in square brackets before the message body.
+
+`PushoverDevice` and `DeviceMap` work similarly to the priority scheme above. `PushoverDevice` is the default default (left blank, typically, to use whatever is the Pushover account default). Messages for specific Vera users can be re-routed to different devices using the map in `DeviceMap`, which is a comma separate list of `verausernumber=pushoverdevice` pairs. You will need to know the Vera user number of your user(s) to map alerts this way, but those can be found in the messages send to Pushover.
 
 ## License ##
 
