@@ -2,9 +2,9 @@
 
 ## Introduction ##
 
-Since Ezlo is going to a paid subscription model for their cloud service, I cobbled together this plugin for users that only need to receive alerts from their Vera hub without paying for a subscription or any other services their cloud offers.
+Since Ezlo is going to a paid subscription model for their cloud service, I cobbled together this plugin for users that only need to receive alerts from their Vera hub without paying for their subscription or any other services their cloud offers.
 
-Also, if you are looking at ensuring you are removed from dependency on Ezlo's cloud service, check out my [Vera-Decouple project on Github](https://github.com/toggledbits/Vera-Decouple).
+Also, if you are looking at ensuring you are removed from dependency on Ezlo's cloud services, check out my [Vera-Decouple project on Github](https://github.com/toggledbits/Vera-Decouple).
 
 If you are migrating away from Vera and have decided that an Ezlo hub doesn't meet your needs, check out my [Multi-System Reactor](https://reactor.toggledbits.com) project... it works with Home Assistant, Hubitat, ZWave-JS, MQTT, ...
 
