@@ -1,0 +1,15 @@
+<implementation>
+  <functions>
+    function AlertPushoverStartup(lul_device)
+        luup.log( "AlertPushover Plugin: Startup initialization" )
+        apPlugin = require( "L_AlertPushover" )
+        -- Callbacks
+        checkAlerts = apPlugin.checkAlerts
+        return apPlugin.AlertPushoverInit(lul_device)
+    end
+  </functions>
+  <startup>AlertPushoverStartup</startup>
+  <actionList>
+  </actionList>
+</implementation>
+
