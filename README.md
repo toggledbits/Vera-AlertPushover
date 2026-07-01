@@ -10,7 +10,7 @@ If you are migrating away from Vera and have decided that an Ezlo hub doesn't me
 
 ## Reporting Bugs/Enhancement Requests ##
 
-Bug reports and enhancement requests are welcome! Please use the "Issues" link for the [Github repository]() to open a new bug report, ask a question, or make an enhancement request.
+Bug reports and enhancement requests are welcome! Please use the "Issues" link for the [Github repository](https://github.com/toggledbits/Vera-AlertPushover) to open a new bug report, ask a question, or make an enhancement request.
 
 If you're reporting an issue, you will be asked to provide log messages, so capture your Vera log (http://hub-local-ip/cgi-bin/cmh/log.sh?Device=LuaUPnP) and be prepared to extract AlertPushover messages from it if asked (or better yet, extract and post them first thing).
 
@@ -20,7 +20,7 @@ Please do not use the Ezlo Community Forums for communication about this plugin 
 
 **IMPORTANT:** This plugin is not distributed/updated in the Vera App Marketplace, which as of this writing has been down for months and is apparently not well supported within Ezlo these days. Updates will be offered exclusively through the plugin's [Github repository](https://github.com/toggledbits/AlertPushover).
 
-1. Download the latest release package in ZIP format: [release packages](https://github.com/toggledbits/AlertPushover/releases)
+1. Download the latest release package in ZIP format: [release packages](https://github.com/toggledbits/Vera-AlertPushover/releases)
 2. Unzip the downloaded archive to a folder on your local system (remember where!).
 3. Open the Vera UI in your browser.
 4. Go to *Apps > Develop apps > Luup files*
