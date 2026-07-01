@@ -1,5 +1,6 @@
 -- L_AlertPushover.lua -- Send Vera system alerts via Pushover
--- See: https://github.com/toggledbits/AlertPushover
+-- Copyright (C) 2026, Patrick H. Rigney; published under MIT License
+-- See: https://github.com/toggledbits/Vera-AlertPushover
 
 module("L_AlertPushover", package.seeall)
 
